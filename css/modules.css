@@ -764,25 +764,6 @@ input[type="range"]:active::-ms-thumb {
 
 /* stylelint-enable */
 
-a:hover, a:active {
-  outline: none;
-}
-
-a:focus,
-[tabindex="0"]:focus,
-details:focus,
-summary:focus,
-input:focus,
-textarea:focus,
-button:focus,
-select:focus {
-  outline: 3px solid #000;
-}
-
-a:focus, [tabindex="0"]:focus {
-  outline-offset: 3px;
-}
-
 [aria-busy="true"] {
   cursor: progress;
 }
@@ -826,6 +807,25 @@ abbr[title]::after {
 a[href^="#"]::after,
 a[href^="javascript:"]::after {
   content: "";
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 3px solid #000;
+}
+
+a:focus, [tabindex="0"]:focus {
+  outline-offset: 3px;
 }
 
 pre, blockquote {
